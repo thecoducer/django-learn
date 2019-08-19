@@ -13,3 +13,6 @@ def display(request):
 def show(request):
     name = "Mayukh"
     return render(request, "test.html", {'uname': name})
+
+def msg(request):
+	return render(request, "test2.html")

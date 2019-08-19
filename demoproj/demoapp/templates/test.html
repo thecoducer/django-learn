@@ -3,7 +3,7 @@
     <head>
         <title>My first template</title>
     </head>
-   
+    {% load static %}
     <style>
         img{
             width: 200px;
@@ -14,8 +14,8 @@
 
     <body style="background-color: darkred">
         <h1 style="color: lightblue; text-align: center">Hello {{uname}}!</h1>
-        
+        <img src="{% static '/images/1.png' %}" alt="no image">
         <br>
-       
+        <a href="/msg/">Click here</a>
     </body>
 </html>
