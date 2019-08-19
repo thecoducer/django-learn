@@ -26,7 +26,7 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Create ```static``` and ```templates``` within ```demoapp``` directory
 - Put ```html``` files inside the ```templates``` folder
 - ```static``` folder has ```images``` and ```css``` folders that contains images and css files respectively
-- 
+- Open ```demoproj/settings.py``` and add your app name ```'demoapp'``` to the ```INSTALLED_APPS``` list and also add this line ```[os.path.join(BASE_DIR, 'templates')]``` to TEMPLATES DIRS
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
