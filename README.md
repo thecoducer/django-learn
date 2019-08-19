@@ -1,5 +1,7 @@
 # Learning Django
-### A guide to set up Django in a virtual environment
+Django is a Python-based free and open-source web framework, which follows the model-template-view (MTV) architectural pattern. Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and "pluggability" of components, less code, low coupling, rapid development, and the principle of don't repeat yourself. Python is used throughout, even for settings files and data models.
+
+## A guide to set up Django in a virtual environment
 
 1. Create a folder: django-learn
 2. ```cd django-learn```
@@ -14,8 +16,9 @@
 8. ```cd demoproj```
 > Inside the *demoproj* directory
 9. Create a Django web app: ```python3 manage.py startapp demoapp```
-
----
+10. ```cd demoapp```
+11. Start the app: ```python manage.py runserver```
+> Go to the localhost:8000. If you get to see the page with a green rocket then Django app is running successfully
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
