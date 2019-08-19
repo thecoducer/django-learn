@@ -21,24 +21,8 @@ Django is a Python-based free and open-source web framework, which follows the m
     > Go to the localhost:8000. If you get to see the page with a green rocket then the Django app is running successfully
 
 ## Day 1
-- Create a view (say *index*) in ```demoapp/views.py```
-    - ```python
-        from django.http import HttpResponse
-        import datetime
-        ```
-    - ```python
-        def index(request):
-            return HttpResponse("<h1>Hello world!</h1>")
-
-        def display(request):
-	        d = datetime.datetime.now()
-	        return HttpResponse("The current date and time is" + str(d))
-        ```
+- Create a view in ```demoapp/views.py```
 - We need to add path in ```demoproj/urls.py``` for each view we create
-    - ```python
-        from demoapp import views
-        ```
-    - add ```path('index/', views.index)``` in the ```urlpatterns``` list
 - Test it. Run ```python manage.py runserver```
 - 
 
