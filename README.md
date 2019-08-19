@@ -1,3 +1,6 @@
+# Learning Django
+## A guide to set up Django in a virtual environment
+
 1. Create a folder: django-learn
 2. ```cd django-learn```
 3. (Skip if already installed) Install Python's virtual environment: ```sudo apt install virtualenv```
