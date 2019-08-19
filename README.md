@@ -30,7 +30,11 @@ Django is a Python-based free and open-source web framework, which follows the m
             return HttpResponse("<h1>Hello world!</h1>")
         ```
 - We need to add path in ```demoproj/urls.py``` for each view we create
-    - 
+    - ```python
+        from djangoapp import views
+        ```
+    - add ```path('index/', views.index)``` in the ```urlpatterns``` list
+- 
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
