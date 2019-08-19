@@ -23,7 +23,9 @@ Django is a Python-based free and open-source web framework, which follows the m
 ## Day 1
 - Create a view in ```demoapp/views.py```
 - We need to add path in ```demoproj/urls.py``` for each view we create
-- Test it. Run ```python manage.py runserver```
+- Create ```static``` and ```templates``` within ```demoapp``` directory
+- Put ```html``` files inside the ```templates``` folder
+- ```static``` folder has ```images``` and ```css``` folders that contains images and css files respectively
 - 
 
 ## My setup:
