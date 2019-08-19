@@ -1,5 +1,5 @@
 # Learning Django
-## A guide to set up Django in a virtual environment
+### A guide to set up Django in a virtual environment
 
 1. Create a folder: django-learn
 2. ```cd django-learn```
@@ -14,3 +14,11 @@
 8. ```cd demoproj```
 > Inside the *demoproj* directory
 9. Create a Django web app: ```python3 manage.py startapp demoapp```
+
+---
+
+## My setup:
+- Ubuntu 18.04.3 LTS
+- Python 3.6.8
+- pip 19.2.2
+- virtualenv 16.7.0
