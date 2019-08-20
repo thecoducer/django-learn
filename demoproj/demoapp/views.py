@@ -19,3 +19,6 @@ def msg(request):
 
 def disp(request):
     return render(request, "test3.html")
+
+def home(request):
+    return render(request, "home.html")

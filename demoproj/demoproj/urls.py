@@ -20,8 +20,9 @@ from demoapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
-    path('display/', views.display),
+    path('time/', views.display),
     path('show/', views.show),
     path('msg/', views.msg),
-    path('disp/', views.disp)
+    path('display/', views.disp),
+    path('homepage/', views.home)
 ]

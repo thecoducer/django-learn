@@ -29,8 +29,15 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Open ```demoproj/settings.py``` and add your app name ```'demoapp'``` to the ```INSTALLED_APPS``` list and also add this line ```[os.path.join(BASE_DIR, 'templates')]``` to TEMPLATES DIRS
 
 ## Day 2
-- Design a page using external CSS ```static/style.css```
-- 
+- Created external CSS ```static/css/style.css```
+- Designed ```home.html``` using stylesheet ```static/css/home.css```
+- Created a model in ```demoapp/models.py```
+- ```python manage.py makemigrations```
+- ```python manage.py migrate```
+- Django admin: localhost:8000/admin
+- Create a user: ```python manage.py createsuperuser```
+- Register Student with thecoducer(admin)
+
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
