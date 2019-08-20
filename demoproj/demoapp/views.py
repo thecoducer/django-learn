@@ -16,3 +16,6 @@ def show(request):
 
 def msg(request):
 	return render(request, "test2.html")
+
+def disp(request):
+    return render(request, "test3.html")
