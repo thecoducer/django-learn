@@ -28,8 +28,8 @@ Django is a Python-based free and open-source web framework, which follows the m
 - ```static``` folder has ```images``` and ```css``` folders that contains images and css files respectively
 - Open ```demoproj/settings.py``` and add your app name ```'demoapp'``` to the ```INSTALLED_APPS``` list and also add this line ```[os.path.join(BASE_DIR, 'templates')]``` to TEMPLATES DIRS
 
-# Day 2
-- Design a page using external CSS
+## Day 2
+- Design a page using external CSS ```static/style.css```
 - 
 
 ## My setup:

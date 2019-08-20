@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+}
+#main{
+    width: 600px;
+    height: 400px;
+    background: -webkit-linear-gradient(left, lightgreen, orange);
+    background: -moz-linear-gradient(left, lightgreen, orange);
+    background: -o-linear-gradient(left, lightgreen, orange);
+    background: -ms-linear-gradient(left, lightgreen, orange);
+    margin-left: 200px;
+    margin-top: 200px;
+    
+}
