@@ -22,5 +22,6 @@ urlpatterns = [
     path('index/', views.index),
     path('display/', views.display),
     path('show/', views.show),
-    path('msg/', views.msg)
+    path('msg/', views.msg),
+    path('disp/', views.disp)
 ]

@@ -10,5 +10,28 @@ body{
     background: -ms-linear-gradient(left, lightgreen, orange);
     margin-left: 200px;
     margin-top: 200px;
-    
+    border: 2px solid black;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid black;
+    margin: 40px;
+    background-size: 100% 100%;
+}
+
+#one{
+    background-image: url('../images/1.png');
+}
+
+#two{
+    background-image: url('../images/2.jpg');
+}
+
+p{
+    float: left;
+    margin-left: 100px;
+    font-style: italic;
 }
