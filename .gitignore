@@ -2,6 +2,12 @@
 # Created by https://www.gitignore.io/api/python,django,virtualenv
 # Edit at https://www.gitignore.io/?templates=python,django,virtualenv
 
+*.env
+*env
+env
+/env
+env/
+
 ### Django ###
 *.log
 *.pot
