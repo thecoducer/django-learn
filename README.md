@@ -29,14 +29,26 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Open ```demoproj/settings.py``` and add your app name ```'demoapp'``` to the ```INSTALLED_APPS``` list and also add this line ```[os.path.join(BASE_DIR, 'templates')]``` to TEMPLATES DIRS
 
 ## Day 2
-- Created external CSS ```static/css/style.css```
-- Designed ```home.html``` using stylesheet ```static/css/home.css```
-- Created a model in ```demoapp/models.py```
-- ```python manage.py makemigrations```
-- ```python manage.py migrate```
-- Django admin: localhost:8000/admin
-- Create a user: ```python manage.py createsuperuser```
-- Register Student with thecoducer(admin)
+- Style ```test3.html``` using an external CSS ```static/css/style.css```
+- Style ```home.html``` using an external CSS ```static/css/home.css```
+- Put ```javascript``` files inside ```static/js```
+- Create a model in ```demoapp/models.py```
+    - A model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing.
+    - Generally, each model maps to a single database table.
+    - Each attribute of the model represents a database field.
+    - With all of this, Django gives you an
+    automatically-generated database-access API.
+    - Django’s models provide an **Object-relational Mapping (ORM)** to the underlying database. ORM is a powerful programming technique that makes working with data and relational databases much easier.
+    - Refer [docs.djangoproject.com](https://docs.djangoproject.com/en/2.2/topics/db/models/)
+    - Refer [djangobook.com](https://djangobook.com/mdj2-models/)
+- Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
+    - Create new migrations based on the changes you have made to your models: ```python manage.py makemigrations```
+    - Apply and unapply migrations: ```python manage.py migrate```
+    - Refer [docs.djangoproject.com](https://docs.djangoproject.com/en/2.2/topics/migrations/)
+- Go to ```localhost:8000/admin``` for Django admin
+- To create a user: ```python manage.py createsuperuser```
+- Register your newly created model with the admin
+    - Refer to [Registering models with admin](https://djangobook.com/mdj2-django-admin/)
 
 
 ## My setup:
