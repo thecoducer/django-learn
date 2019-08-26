@@ -4,7 +4,7 @@
     <title>Create Student</title>
 </head>
 <body>
-    <form method="POST" action="/edit/{{student.id}}">
+    <form method="post" action="/edit/{{student.id}}">
         {% csrf_token %}
         <table border="1px">
             <tr>
@@ -24,12 +24,12 @@
 
             <tr>
                 <th>DOB</th>
-                <td><input type="text" name="dob" id="id_dob" value="{{student.dob}}"></td>
+                <td><input type="date" name="dob" id="id_dob" value="{{student.dob}}"></td>
             </tr>
 
             <tr>
                 <th>Age</th>
-                <td><input type="text" name="age" id="id_age" value="{{student.age}}"></td>
+                <td><input type="number" name="age" id="id_age" value="{{student.age}}"></td>
             </tr>
         </table>
         <br>

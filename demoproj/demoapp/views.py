@@ -45,12 +45,12 @@ def delete(request, id):
     return redirect("/studentlist")
 
 def edit(request,id):
-    student = Student.objects.get(id=id)
-    if request.method == "POST":
-        form = StudentForm(request.POST, instance=student)
+    student=Student.objects.get(id=id)
+    if request.method=="POST":
+        form=StudentForm(request.POST,instance=student)
         if form.is_valid():
             form.save()
             return redirect("/studentlist")
-    else: # while GET
-        form = StudentForm()
-        return render(request, "editstudent.html", {'sform': form, 'student': student})
+    else:
+        form=StudentForm()
+        return render(request,"editstudent.html",{'sform':form,'student':student})
