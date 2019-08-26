@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Student</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <!-- {{sform.as_p}} --> <!-- renders as a paragraph-->
+        <table border="2px">
+            {{sform.as_table}}
+        </table>
+        <br>
+        <button type="submit">Save</button>
+        <br><br>
+        <a href="/studentlist/">Back to student list</a>
+    </form>
+</body>
+</html>

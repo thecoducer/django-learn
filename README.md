@@ -50,6 +50,10 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Register your newly created model with the admin
     - Refer to [Registering models with admin](https://djangobook.com/mdj2-django-admin/)
 
+## Day 3
+- Create a html file ```showstudents.html``` to view the model as the form of a table in browser
+- Create a python file inside app folder ```form.py```
+
 
 ## My setup:
 - Ubuntu 18.04.3 LTS

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Student</title>
+</head>
+<body>
+    <form method="POST" action="/edit/{{student.id}}">
+        {% csrf_token %}
+        <table border="1px">
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" name="fname" id="id_fname" value="{{student.fname}}"></td>
+            </tr>
+
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="lname" id="id_lname" value="{{student.lname}}"></td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td><input type="text" name="email" id="id_email" value="{{student.email}}"></td>
+            </tr>
+
+            <tr>
+                <th>DOB</th>
+                <td><input type="text" name="dob" id="id_dob" value="{{student.dob}}"></td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td><input type="text" name="age" id="id_age" value="{{student.age}}"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Update</button>
+        <br><br>
+        <a href="/studentlist/">Back to student list</a>
+    </form>
+</body>
+</html>

@@ -24,5 +24,9 @@ urlpatterns = [
     path('show/', views.show),
     path('msg/', views.msg),
     path('display/', views.disp),
-    path('homepage/', views.home)
+    path('homepage/', views.home),
+    path('studentlist/', views.showstudents),
+    path('createstudent/', views.createstudent),
+    path('delete/<int:id>', views.delete),
+    path('edit/<int:id>', views.edit)
 ]
