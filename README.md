@@ -51,8 +51,7 @@ Django is a Python-based free and open-source web framework, which follows the m
     - Refer to [Registering models with admin](https://djangobook.com/mdj2-django-admin/)
 
 ## Day 3
-- View the ```Student``` model in the form of a table in a browser
-    - Created a html table in file: ```showstudents.html```
+- To view the ```Student``` model in the form of a table in a browser, we create a html table in a file: ```showstudents.html```
 - To create a new entry for a student, we create a html form in ```createstudent.html```
     - To work with forms we need to create a python file: ```demoapp/form.py```
     - Refer [Working with forms](https://docs.djangoproject.com/en/2.2/topics/forms/)
