@@ -51,8 +51,15 @@ Django is a Python-based free and open-source web framework, which follows the m
     - Refer to [Registering models with admin](https://djangobook.com/mdj2-django-admin/)
 
 ## Day 3
-- Create a html file ```showstudents.html``` to view the model as the form of a table in browser
-- Create a python file inside app folder ```form.py```
+- View the ```Student``` model in the form of a table in a browser
+    - Created a html table in file: ```showstudents.html```
+- To create a new entry for a student, we create a html form in ```createstudent.html```
+    - To work with forms we need to create a python file: ```demoapp/form.py```
+    - Refer [Working with forms](https://docs.djangoproject.com/en/2.2/topics/forms/)
+    - ```{% csrf_token %}``` provided cross site request forgery protection. Read [this](https://docs.djangoproject.com/en/2.2/ref/csrf/) to know more
+    - Each data entry in our model has a unique ```id``` which is an auto-incremented value. We need to use it whenever we have to uniquely identify each row data.
+- To delete an entry. We simply do that writing a function in ```views.py```
+- To edit an entry. We create a form: ```editstudent.html```, fetch the existing data (GET), modify it and submit the changes (POST).
 
 
 ## My setup:
