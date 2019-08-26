@@ -59,6 +59,9 @@ Django is a Python-based free and open-source web framework, which follows the m
     - Each data entry in our model has a unique ```id``` which is an auto-incremented value. We need to use it whenever we have to uniquely identify each row data.
 - To delete an entry, we simply write a function in ```views.py``` to do that.
 - To edit an entry, we create a form: ```editstudent.html```, fetch the existing data (GET), modify it and submit the changes (POST).
+    - **GET**: Parameters remain in browser history because they are part of the URL
+    - **POST**: Parameters are not saved in browser history.
+    - Read [this](https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests) to learn more about their difference.
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
