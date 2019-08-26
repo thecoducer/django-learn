@@ -58,8 +58,8 @@ Django is a Python-based free and open-source web framework, which follows the m
     - Refer [Working with forms](https://docs.djangoproject.com/en/2.2/topics/forms/)
     - ```{% csrf_token %}``` provides *cross site request forgery protection*. Read [this](https://docs.djangoproject.com/en/2.2/ref/csrf/) to know more
     - Each data entry in our model has a unique ```id``` which is an auto-incremented value. We need to use it whenever we have to uniquely identify each row data.
-- To delete an entry. We simply do that writing a function in ```views.py```
-- To edit an entry. We create a form: ```editstudent.html```, fetch the existing data (GET), modify it and submit the changes (POST).
+- To delete an entry, we simply write a function in ```views.py``` to do that.
+- To edit an entry, we create a form: ```editstudent.html```, fetch the existing data (GET), modify it and submit the changes (POST).
 
 
 ## My setup:
