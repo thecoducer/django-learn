@@ -60,7 +60,6 @@ Django is a Python-based free and open-source web framework, which follows the m
 - To delete an entry, we simply write a function in ```views.py``` to do that.
 - To edit an entry, we create a form: ```editstudent.html```, fetch the existing data (GET), modify it and submit the changes (POST).
 
-
 ## My setup:
 - Ubuntu 18.04.3 LTS
 - Python 3.6.8
