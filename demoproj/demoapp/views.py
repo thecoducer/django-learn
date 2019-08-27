@@ -130,3 +130,6 @@ def getpdf_nice(request):
         # write the document to disk
         doc.build(elements)
         return HttpResponse("pdf created")
+
+def rootpage(request):
+	return render(request, "rootpage.html")

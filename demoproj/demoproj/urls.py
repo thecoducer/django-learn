@@ -33,5 +33,6 @@ urlpatterns = [
     path('getcsvdb', views.getcsv_db),
     path('getpdf', views.getpdf),
     path('getpdfdb', views.getpdf_db),
-    path('nicepdf', views.getpdf_nice)
+    path('nicepdf', views.getpdf_nice),
+    path('', views.rootpage, name='home')
 ]
