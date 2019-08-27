@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import datetime
+# Day 2
 from demoapp.models import Student
+# Day 3
 from demoapp.form import StudentForm
+# Day 4
 import csv
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
