@@ -73,6 +73,7 @@ Django is a Python-based free and open-source web framework, which follows the m
     - ```getpdf``` method static generates a pdf file.
     - ```getpdf_db``` method generates a pdf file dynamically. It fetches data from the ```Student``` model.
     - ```getpdf_nice``` method generates a pdf file with a well-formatted table that contains data from the ```Student``` model.
+    - Refer [Outputting PDFs with Django](https://docs.djangoproject.com/en/2.2/howto/outputting-pdf/)
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
