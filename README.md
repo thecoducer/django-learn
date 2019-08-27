@@ -64,9 +64,15 @@ Django is a Python-based free and open-source web framework, which follows the m
     - Read [this](https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests) to learn more about their difference.
 
 ## Day 4
-- Static generation of a csv file: ```student.csv```
-    - ```import csv``` in ```views.py``` and ```getcsv``` method does the job
-- Dynamic generation of a csv file ```student_db.csv```
+- Generating a csv file:
+    - ```getcsv``` method static generates a csv file
+    - ```getcsv_db``` method generates a csv file dynamically. It fetches data from the ```Student``` model.
+    - Refer [Outputting CSV with Django](https://docs.djangoproject.com/en/2.2/howto/outputting-csv/)
+- Generating a pdf file:
+    - ```pip3 install reportlab```, we need it to output pdf.
+    - ```getpdf``` method static generates a pdf file.
+    - ```getpdf_db``` method generates a pdf file dynamically. It fetches data from the ```Student``` model.
+    - ```getpdf_nice``` method generates a pdf file with a well-formatted table that contains data from the ```Student``` model.
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
