@@ -63,6 +63,11 @@ Django is a Python-based free and open-source web framework, which follows the m
     - **POST**: Parameters are not saved in browser history.
     - Read [this](https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests) to learn more about their difference.
 
+## Day 4
+- Static generation of a csv file: ```student.csv```
+    - ```import csv``` in ```views.py``` and ```getcsv``` method does the job
+- Dynamic generation of a csv file ```student_db.csv```
+
 ## My setup:
 - Ubuntu 18.04.3 LTS
 - Python 3.6.8

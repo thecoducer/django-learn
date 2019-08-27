@@ -28,5 +28,10 @@ urlpatterns = [
     path('studentlist/', views.showstudents),
     path('createstudent/', views.createstudent),
     path('delete/<int:id>', views.delete),
-    path('edit/<int:id>', views.edit)
+    path('edit/<int:id>', views.edit),
+    path('getcsv', views.getcsv),
+    path('getcsvdb', views.getcsv_db),
+    path('getpdf', views.getpdf),
+    path('getpdfdb', views.getpdf_db),
+    path('nicepdf', views.getpdf_nice)
 ]
