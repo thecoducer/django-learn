@@ -1,3 +1,4 @@
+# Day 1
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import datetime
@@ -11,6 +12,10 @@ from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter, inch
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+# Day 5
+from demoapp.form import TestForm
+from django.core.mail import send_mail
+from demoproj import settings
 
 # Create your views here.
 def index(request):
@@ -133,3 +138,48 @@ def getpdf_nice(request):
 
 def rootpage(request):
 	return render(request, "rootpage.html")
+
+def sample(request):
+        return render(request, "index.html")
+
+def about(request):
+        return render(request, "about.html")
+
+def setsession(request):
+        if request.method == "POST":
+                form = TestForm(request.POST)
+                if form.is_valid():
+                        name = request.POST['name']
+                        email = request.POST['email']
+                        request.session['name'] = name # stores name in a session
+                        request.session['email'] = email # stores email in a session
+                        return redirect('/getsession')
+        else:
+                form = TestForm()
+        return render(request, 'sess.html', {'form': form})
+
+def getsession(request):
+        name = request.session['name'] #fetches session value
+        email = request.session['email'] #fetches session value
+        return render(request, 'result.html', {'name':name, 'email':email})
+
+def setcookie(request):
+        response = HttpResponse('Cookie set')
+        response.set_cookie("mycookie", "abcdef")
+        # mycookie is cookie name, abcd is cookie value
+        return response
+
+def getcookie(request):
+        cookievalue = request.COOKIES["mycookie"] #fetches cookie value
+        return HttpResponse("Cookie value is " + cookievalue)
+
+def sendmail(request):
+        subject = "Greetings"
+        msg = "Congratulations for your success"
+        to = "mayukh5741@gmail.com"
+        res = send_mail(subject, msg, settings.EMAIL_HOST_USER, [to])
+        if(res == 1):
+                msg = "Mail sent successfully"
+        else:
+                msg = "Mail could not sent"
+        return HttpResponse(msg)

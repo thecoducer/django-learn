@@ -34,5 +34,12 @@ urlpatterns = [
     path('getpdf', views.getpdf),
     path('getpdfdb', views.getpdf_db),
     path('nicepdf', views.getpdf_nice),
-    path('', views.rootpage, name='home')
+    path('', views.rootpage, name='home'),
+    path('sample', views.sample),
+    path('about', views.about),
+    path('setsession', views.setsession),
+    path('getsession', views.getsession),
+    path('setcookie', views.setcookie),
+    path('getcookie', views.getcookie),
+    path('sendmail', views.sendmail)
 ]

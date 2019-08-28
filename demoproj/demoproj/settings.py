@@ -114,6 +114,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'edummy17@yahoo.com'
+EMAIL_HOST_PASSWORD = 'Kolkata@0101'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
