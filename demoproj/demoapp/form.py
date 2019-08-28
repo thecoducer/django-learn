@@ -15,3 +15,7 @@ class TestForm(forms.Form):
     }))
     email = forms.CharField(label = "Enter email", max_length=30)
     # name and email are field names
+
+class AddForm(forms.Form):
+    a = forms.IntegerField()
+    b = forms.IntegerField()

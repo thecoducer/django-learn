@@ -17,6 +17,8 @@ from demoapp.form import TestForm
 from django.core.mail import send_mail
 from demoproj import settings
 
+from demoapp.form import AddForm
+
 # Create your views here.
 def index(request):
         return HttpResponse("<h1>Hello world!</h1>")
@@ -183,3 +185,15 @@ def sendmail(request):
         else:
                 msg = "Mail could not sent"
         return HttpResponse(msg)
+
+def add(request):
+        if request.method == "POST":
+                form = AddForm(request.POST)
+                if form.is_valid():
+                        a = int(request.POST['a'])
+                        b = int(request.POST['b'])
+                        return HttpResponse(a+b)
+                        # how to display result in that page?
+        else:
+                form = AddForm()
+        return render(request, 'add.html', {'form': form})

@@ -41,5 +41,6 @@ urlpatterns = [
     path('getsession', views.getsession),
     path('setcookie', views.setcookie),
     path('getcookie', views.getcookie),
-    path('sendmail', views.sendmail)
+    path('sendmail', views.sendmail),
+    path('add', views.add)
 ]
