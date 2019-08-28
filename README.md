@@ -79,15 +79,23 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Creating HTML templates:
     - ```base.html``` includes ```header.html``` and ```footer.html```
     - ```index.html``` and ```about.html``` extends the template ```base.html```
-- Write two methods in ```views.py``` to work with session:
+- Added two methods in ```views.py``` to work with session:
     - ```setsession``` sets session
     - ```getsession``` fetches session
-- Write two methods in ```views.py``` to work with cookies:
+- Added two methods in ```views.py``` to work with cookies:
     - ```setcookie``` and ```getcookie```
 - Read [this](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies) to know that difference between session and cookie
-- To send email via Django, we do 
+- To send email via Django, we need this library
     ```python 
         from django.core.mail import send_mail
+    ```
+    and also add these few lines in ```settings.py```
+    ```
+        EMAIL_USE_TLS = True
+        EMAIL_HOST = 'smtp.mail.yahoo.com'
+        EMAIL_PORT = 465
+        EMAIL_HOST_USER = 'edummy17@yahoo.com'
+        EMAIL_HOST_PASSWORD = 'Kolkata@0101'
     ```
 
 ## My setup:
