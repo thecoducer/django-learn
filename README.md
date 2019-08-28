@@ -79,10 +79,10 @@ Django is a Python-based free and open-source web framework, which follows the m
 - Creating HTML templates:
     - ```base.html``` includes ```header.html``` and ```footer.html```
     - ```index.html``` and ```about.html``` extends the template ```base.html```
-- We write two methods in ```views.py``` to work with session:
+- Write two methods in ```views.py``` to work with session:
     - ```setsession``` sets session
     - ```getsession``` fetches session
-- We write two methods in ```views.py``` to work with cookies:
+- Write two methods in ```views.py``` to work with cookies:
     - ```setcookie``` and ```getcookie```
 - Read [this](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies) to know that difference between session and cookie
 - To send email via Django, we do 
