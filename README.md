@@ -75,6 +75,21 @@ Django is a Python-based free and open-source web framework, which follows the m
     - ```getpdf_nice``` method generates a pdf file with a well-formatted table that contains data from the ```Student``` model.
     - Refer [Outputting PDFs with Django](https://docs.djangoproject.com/en/2.2/howto/outputting-pdf/)
 
+## Day 5
+- Creating HTML templates:
+    - ```base.html``` includes ```header.html``` and ```footer.html```
+    - ```index.html``` and ```about.html``` extends the template ```base.html```
+- We write two methods in ```views.py``` to work with session:
+    - ```setsession``` sets session
+    - ```getsession``` fetches session
+- We write two methods in ```views.py``` to work with cookies:
+    - ```setcookie``` and ```getcookie```
+- Read [this](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies) to know that difference between session and cookie
+- To send email via Django, we do 
+    ```python 
+        from django.core.mail import send_mail
+    ```
+
 ## My setup:
 - Ubuntu 18.04.3 LTS
 - Python 3.6.8
