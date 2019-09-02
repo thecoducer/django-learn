@@ -99,7 +99,8 @@ Django is a Python-based free and open-source web framework, which follows the m
     ```
 
 ## Day 6
-- 
+- Authentication in Django
+    - Creating User account registration page, detailed instructions [here](https://github.com/thecoducer/django-learn/blob/master/login-reg-readme.txt)
 
 ## My setup:
 - Ubuntu 18.04.3 LTS
