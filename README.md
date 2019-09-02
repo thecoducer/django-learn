@@ -98,6 +98,9 @@ Django is a Python-based free and open-source web framework, which follows the m
         EMAIL_HOST_PASSWORD = 'Kolkata@0101'
     ```
 
+## Day 6
+- 
+
 ## My setup:
 - Ubuntu 18.04.3 LTS
 - Python 3.6.8
