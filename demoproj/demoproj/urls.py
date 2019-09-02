@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from demoapp import views
+from django.contrib.auth.views import LoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -42,5 +43,7 @@ urlpatterns = [
     path('setcookie', views.setcookie),
     path('getcookie', views.getcookie),
     path('sendmail', views.sendmail),
-    path('add', views.add)
+    path('add', views.add),
+    path('login/', LoginView.as_view()),
+    path('customreg/', views.customreg)
 ]

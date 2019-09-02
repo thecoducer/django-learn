@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <br>
+    <form method="POST" action="/check/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Sign in</button>
+    </form> 
+
+<!-- 
+    <form method="POST" action="/check/">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="email" style="margin: auto;">Email address:</label>
+          <input type="email" class="form-control" id="email" value="{{form.email}}" style="margin: auto; width: 50%;">
+        </div>
+        <div class="form-group">
+          <label for="pwd" style="margin: auto;">Password:</label>
+          <input type="password" class="form-control" id="pwd" value="{{form.password}}" style="margin: auto; width: 50%;">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+    
+    <br>
+
+    <a href="/customreg">New User? Click here to sign up</a>
+
+</body>
+</html>

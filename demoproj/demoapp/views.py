@@ -16,6 +16,8 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 from demoapp.form import TestForm
 from django.core.mail import send_mail
 from demoproj import settings
+# Day 6
+from demoapp.form import UserForm, RegForm
 
 from demoapp.form import AddForm
 
@@ -194,6 +196,24 @@ def add(request):
                         b = int(request.POST['b'])
                         return HttpResponse(a+b)
                         # how to display result in that page?
+                        # Answer: Send a context dict containing your
+                        # answer to a result.html page that renders it
         else:
                 form = AddForm()
         return render(request, 'add.html', {'form': form})
+
+
+def customreg(request):
+        if request.method == "POST":
+                user = UserForm(request.POST)
+                form = RegForm(request.POST)
+                if user.is_valid() and form.is_valid():
+                        profile = form.save(commit = False)
+                        profile.user = request.user 
+                        user.save()
+                        profile.save()
+                        return redirect("/login/")
+        else:
+                user = UserForm()
+                form = RegForm()
+        return render(request, "registration/customreg.html", {'form': form, 'user': user})
