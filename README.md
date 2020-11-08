@@ -5,7 +5,7 @@ Django is a Python-based free and open-source web framework, which follows the m
 
 1. Create a folder: django-learn
 2. ```cd django-learn```
-3. (Skip if already installed) Install Python's virtual environment: ```sudo apt install virtualenv```
+3. (Skip if already installed) Install Python's virtual environment: ```sudo apt install virtualenv``` and also ```sudo apt install python3-dev```
 4. Create a virtual environment in Python: ```virtualenv -p python3 env```
     > Virtual environment *env* created for the directory *django-learn*
 5. Activate *env*: ```source env/bin/activate```
